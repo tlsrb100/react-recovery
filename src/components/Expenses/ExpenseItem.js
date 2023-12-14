@@ -9,10 +9,8 @@ import ExpenseDate from "./ExpenseDate";
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
-  console.log("ExpenseItem.js 실행");
   const clickHandler = () => {
     setTitle("Updated!");
-    console.log(title);
   };
   return (
     <Card className="expense-item">
